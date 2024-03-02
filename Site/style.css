@@ -1,0 +1,32 @@
+body{
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 2.2em;
+    color: #818181;
+    margin: 0;
+}
+
+section, footer{
+    margin: 40px;
+}
+
+h1{
+    font-size: 63px;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    
+}
+
+h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+}
+.carousel-caption h5{
+    font-size: 80px;
+    color: rgb(255, 157, 0);
+    text-shadow: 2px 2px 2px black;
+}

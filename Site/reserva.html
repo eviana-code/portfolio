@@ -1,0 +1,58 @@
+<!-- Descrição da atividade
+
+1º passo
+Crie uma nova página HTML chamada “reserva.html”.
+2º passo
+Na página, você deve criar um formulário de reserva de viagem com os seguintes campos: Nome, Email, Serviços Desejados (uma caixa de seleção com opções como Compra de Passagens, Reserva de Hospedagem, Aluguel de Veículos), Forma de Pagamento (um botão de rádio com opções como Cartão de Crédito, Boleto, PIX) e Prazo de Pagamento (uma lista suspensa com opções como À Vista, Cinco Vezes Sem Juros, Dez Vezes Com Juros).
+3º passo
+Utilize as tags <form>, <input>, <label>, <select>, <option>, <fieldset> e <textarea> para criar o formulário e seus campos.
+4º passo
+Adicione semântica ao formulário utilizando a tag <fieldset> para agrupar os campos do formulário.
+5º passo
+Adicione um botão de envio ao formulário utilizando a tag <input> com o tipo “submit”.
+6º passo
+Salve seu trabalho e visualize a página no navegador. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body>
+    <h1>Reserva de Viagens</h1><br>
+    <form method="get" action="">
+        <fieldset>
+            <legend>Dados da viagem</legend>
+            <br><label>Nome</label>
+            <input type="text" name="nome"><br>
+            <br><label>E-mail</label>
+            <input type="email" name="email"><br>
+            <br><label>Serviços desejados</label>
+            <br><input type="checkbox" name="passagem" value="compraPassagem" checked>Compra de passagens
+            <br><input type="checkbox" name="reserva" value="reservaHospedagem">Reserva de hospedagem
+            <br><input type="checkbox" name="veiculo" value="alguelVeiculo">Aluguel de veículo
+            <br><br><label>Observações</label>
+            <br><textarea rows="3" name="Observacoes"></textarea>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Dados de pagamento</legend>
+            <br><label>Selecione a forma de pagamento</label>
+            <br><input type="radio" name="formaPagamento" value="cartaoCredito" checked>Cartão de crédito
+            <br><input type="radio" name="formaPagamento" value="boleto">Boleto
+            <br><input type="radio" name="formaPagamento" value="pix">Pix<br>
+            <br><label>Prazo de Pagamento</label>
+            <select name="prazoPagamento"><br>
+                <option value="avista">À vista</option>
+                <option value="5xSemJuros">5 vezes sem juros</option>
+                <option value="10xComJuros">10 vezes sem juros</option>
+            </select>
+        </fieldset>
+        <br><input type="submit" value="Enviar informações">
+    
+    </form>
+
+</body>
+</html>
